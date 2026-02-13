@@ -17,9 +17,61 @@ body {
 p {
   color: rgb(85, 85, 85);
 }
-.navbar {
-  background-color: red !important;
+
+
+/* navbar */
+
+
+/* Transparent base navbar */
+.custom-nav {
+  background: transparent !important;
 }
+
+/* Rounded pill container */
+.nav-pill {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+/* Navbar links */
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Create hidden underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;   /* underline color */
+  transition: width 0.3s ease;
+}
+
+/* On hover */
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+/* profile */
+
+
  #profile {
   margin-top: 300px;
   margin-bottom: 300px;
@@ -87,36 +139,105 @@ p {
 
 /* Scattered positions (Desktop) */
 
-.t1 { top: 5%; left: 10%; }
-.t2 { top: 15%; right: 15%; }
-.t3 { top: 35%; left: 5%; }
-.t4 { top: 60%; right: 8%; }
-.t5 { top: 25%; left: 40%; }
-.t6 { bottom: 20%; left: 20%; }
-.t7 { bottom: 10%; right: 30%; }
-.t8 { top: 70%; left: 55%; }
-.t9 { top: 10%; left: 60%; }
-.t10 { bottom: 35%; right: 5%; }
-.t11 { top: 50%; left: 75%; }
-.t12 { bottom: 5%; left: 50%; }
-.t13 { top: 45%; left: 25%; }
-.t14 { bottom: 25%; right: 45%; }
-.t15 { top: 5%; right: 40%; }
+/* ---------------- FRONTEND (LEFT) ---------------- */
+/* ---------------- FRONTEND (LEFT ZONE) ---------------- */
+.t1  { top: 8%;  left: 6%; }    /* HTML */
+.t2  { top: 28%; left: 19%; }   /* CSS */
+.t3  { top: 45%; left: 4%; }    /* JavaScript */
+.t9  { top: 62%; left: 24%; }   /* Bootstrap */
+.t15 { top: 88%; left: 7%; }    /* Tailwind */
+
+
+/* ---------------- LANGUAGES (CENTER ZONE) ---------------- */
+.t4  { top: 12%; left: 38%; }   /* Python */
+.t5  { top: 32%; left: 48%; }   /* C */
+.t6  { top: 58%; left: 41%; }   /* Java */
+.t14 { top: 74%; left: 52%; }   /* PHP */
+
+
+/* ---------------- BACKEND + DATABASE (RIGHT ZONE) ---------------- */
+.t7  { top: 10%; right: 6%; }   /* Django */
+.t8  { top: 20%; right: 22%; }  /* REST API */
+.t13 { top: 42%; right: 14%; }   /* GitHub */
+.t10 { top: 60%; right: 30%; }  /* MySQL */
+.t11 { top: 72%; right: 7%; }   /* SQLite */
+.t12 { top: 89%; right: 15%; }  /* Git */
+
 
 /* Responsive Layout Using Bootstrap Breakpoint */
 
-@media (max-width: 992px) {
+/* project card */
 
-  .tech-cloud {
-    position: static;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-  }
 
-  .tech {
-    position: static;
-  }
+
+.project-card {
+  width: 100%;
+  max-width: 420px;   /* controls card width */
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: none;
 }
+
+
+.project-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-8px);
+}
+
+.project-card:hover .card-title {
+  color: #fff;
+}
+
+.project-card:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.project-card:hover .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* contact */
+
+.contact-box {
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.contact-box i,
+.contact-box img {
+  transition: all 0.35s ease;
+}
+
+.contact-box:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.contact-box:hover a {
+  color: #fff !important;
+}
+
+.contact-box:hover i {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.contact-box:hover img {
+  transform: scale(1.1);
+}
+
