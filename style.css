@@ -11,12 +11,62 @@
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  background-color: rgb(189, 121, 32);
 }
 
 p {
   color: rgb(85, 85, 85);
 }
+.navbar {
+  background-color: red !important;
+}
+ #profile {
+  margin-top: 300px;
+  margin-bottom: 300px;
+  background-color: red;
+}
+
+#about img {
+  transition: all 0.4s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+#about .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#about .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.skills-cloud {
+  height: 450px;
+  max-width: 900px;
+}
+
+/* skill style */
+.skill {
+  position: absolute;
+  font-weight: 500;
+  transition: transform .3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.2);
+}
+
+/* positions */
+.skill:nth-child(1){ top:5%; left:30%; }
+.skill:nth-child(2){ top:18%; left:70%; }
+.skill:nth-child(3){ top:35%; left:12%; }
+.skill:nth-child(4){ top:42%; left:60%; }
+.skill:nth-child(5){ top:55%; left:25%; }
+.skill:nth-child(6){ top:65%; left:80%; }
+.skill:nth-child(7){ top:78%; left:10%; }
+.skill:nth-child(8){ top:85%; left:45%; }
+.skill:nth-child(9){ top:30%; left:40%; }
+.skill:nth-child(10){ top:60%; left:50%; }
