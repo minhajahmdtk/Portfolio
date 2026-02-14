@@ -11,7 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(189, 121, 32);
+  background: linear-gradient(135deg, #4b4b4b 0%, #d9d9d9 100%);
 }
 
 p {
@@ -19,7 +19,6 @@ p {
 }
 
 
-/* navbar */
 
 
 /* Transparent base navbar */
@@ -65,18 +64,38 @@ p {
   width: 100%;
 }
 
+#image{
+  margin-top: 70px;
+}
 
 
 
 
 /* profile */
 
-
- #profile {
-  margin-top: 300px;
-  margin-bottom: 300px;
-  background-color: red;
+.autoShow {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: autoShow 1s ease forwards;
 }
+
+/* delay second element */
+.autoShow:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes autoShow {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 #about img {
   transition: all 0.4s ease;
@@ -112,6 +131,7 @@ p {
 }
 
 /* positions */
+/* experience */
 .tech-cloud {
   height: 500px;
 }
@@ -120,8 +140,28 @@ p {
 .tech {
   position: absolute;
   text-align: center;
+
+  opacity: 0;
+  transform: translateY(80px) scale(0.6);
+
+  animation: imageReveal linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
   transition: 0.3s ease;
 }
+
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 .tech i {
   font-size: 50px;
@@ -134,7 +174,7 @@ p {
 }
 
 .tech:hover {
-  transform: scale(1.2);
+  transform: translateY(0) scale(1.25);
 }
 
 /* Scattered positions (Desktop) */
