@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Minhaj Ahammed T K - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
 
 
   </head>
   <body>
- 
- <nav class="navbar navbar-expand-lg fixed-top custom-nav py-3">
+<section id="profile" class="vh-100 d-flex align-items-center">
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav " id="heroNav">
   <div class="container nav-pill flex-lg-row flex-column text-center text-lg-start">
 
     <!-- Brand -->
-    <a class="navbar-brand fw-bold fs-5 text-dark mb-2 mb-lg-0" href="#" style="margin-right:0px;">
+    <a class="navbar-brand fw-bold fs-5  mb-2 mb-lg-0" href="#">
       Minhaj Ahammed T K
     </a>
 
@@ -58,17 +59,12 @@
 
   </div>
 </nav>
-
-
-
-
-<section id="profile" class="py-5" style="margin:80px 0px 69px 0px;">
   <div class="container" >
     <div class="row justify-content-center text-center">
       
       <div class="col-lg-5 text-center mb-4 mb-lg-0 autoShow" id="image">
         <img src="./assets/Photo.JPG"
-             alt="Profile picture"
+             alt="Minhaj Ahammed Profile Picture"
              class="img-fluid rounded-circle shadow " style="width: 220px;">
       </div>
 
@@ -78,15 +74,11 @@
 
         <!-- Buttons -->
         <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 my-3">
-          <button class="btn btn-outline-dark"
-            onclick="window.open('./assets/Minhaj_AhammedTK_resume.pdf')">
+          <button class="btn "
+            onclick="window.open('./assets/Minhaj_AhammedTK_resume.pdf')" id="btn">
             Download CV
           </button>
 
-          <button class="btn btn-dark"
-            onclick="location.href='./#contact'">
-            Contact Info
-          </button>
         </div>
 
         <!-- Social Icons -->
@@ -106,7 +98,7 @@
     <div class="container ">
 
     <!-- Title -->
-    <div class="text-center " style="margin-bottom: 110px;">
+    <div class="text-center " style="margin-bottom: 50px;margin-top: 20px;">
       <h1 class="fw-bold imageReveal">About Me</h1>
     </div>
 
@@ -123,48 +115,41 @@
       <div class="col-lg-7">
 
         <!-- Cards -->
-        <div class="row text-center mb-4 imageReveal">
-
-         <div class="col-md-6 mb-3">
-  <a href="https://www.inetinfotech.in/" 
+        <div class="row text-center mb-4 imageReveal " >
+          <div class="col-md-6 mb-3 ">
+    <a href="https://www.inetinfotech.in/" 
      target="_blank" 
-     class="text-decoration-none text-dark d-block">
+     class="text-decoration-none d-block">
      
-    <div class="card h-100 shadow-sm p-3">
-      <img src="./assets/experience.png"
-           alt="Experience icon"
-           width="40"
-           class="mx-auto mb-2">
-      <h5 class="fw-bold">Internship</h5>
-      <p class="mb-0">Python Django</p>
+    <div class="card h-100 shadow-sm p-3 text-center">
+  <i class="bi bi-person-workspace fs-2 mb-2 cardicon"></i>
+  <h5 class="fw-bold">Internship</h5>
+  <p class="mb-0">Python Django</p>
+</div>
+
+  </a>
+</div>
+
+          <div class="col-md-6 mb-3">
+  <a href="https://vjec.ac.in/"
+     target="_blank"
+     class="text-decoration-none text-dark d-block">
+
+    <div class="card h-100 shadow-sm p-3 text-center">
+      <i class="bi bi-mortarboard-fill fs-2 mb-2 cardicon"></i>
+      <h5 class="fw-bold">Education</h5>
+      <p class="mb-0">BTech Computer Science</p>
     </div>
 
   </a>
 </div>
 
-          <div class="col-md-6 mb-3" >
-            <a href="https://vjec.ac.in/" 
-     target="_blank" 
-     class="text-decoration-none text-dark d-block">
-            <div class="card h-100 shadow-sm p-3">
-              <img src="./assets/education.png"
-                   alt="Education icon"
-                   width="40"
-                   class="mx-auto mb-2">
-              <h5 class="fw-bold">Education</h5>
-              <p class="mb-0">BTech Computer Science</p>
-            </div>
-          </div>
-
-        </div>
 
         <!-- Text -->
         <p class="text-muted imageReveal">
           Computer Science Engineering graduate from APJ Abdul Kalam Technological University.
           I am a Python and Django developer with hands-on experience building web applications,
-          machine-learning projects, and backend systems. My technical skills include Python,
-          Django, C, MySQL, HTML, CSS, JavaScript, Bootstrap, and REST APIs, supported by Git/GitHub.
-
+          machine-learning projects, and backend systems.
           I have completed multiple academic and personal projects—ranging from web applications to machine learning models—that demonstrate my ability to apply programming concepts to solve real-world problems. I am passionate about learning new technologies and continuously improving my skills.
           I am now seeking entry-level opportunities in Software Development, Python Development,
           or Web Development where I can grow professionally and contribute to meaningful projects.
@@ -178,11 +163,11 @@
 
 <!-- Experience Section -->
 
-<section id="experience" style="margin:90px 0px 0px 0px;">
+<section id="experience" style="margin:50px 0px 0px 0px;">
   <div class="container text-center">
 
-    <p class="text-muted">Explore My</p>
-    <h1 class="fw-bold" style="margin-bottom: 10px;">Experience</h1>
+    <p class="text-muted" style="margin-top: 100px;">Explore My</p>
+    <h1 class="fw-bold" style="margin-bottom: 30px; ">Skills</h1>
 
   <div class="tech-cloud position-relative" style="margin-bottom: 50px;">
 
@@ -210,83 +195,73 @@
 
 <!-- projects section -->
 
-<section id="projects" style="margin:110px 0px 0px 0px;" >
-  <div class="container text-center" style="margin-bottom:150px 0px 20px 0px;">
-    <h1 class="title cardReveal" style="margin-bottom:40px;"  >Projects</h1>
+<section id="projects" class="py-5" style="margin-top:90px;">
+  <div class="container text-center">
+    <h1 class="title mb-5 cardReveal">Projects</h1>
+
     <div class="row g-4 justify-content-center">
 
-  <!-- Project 1 -->
-  <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card project-card h-100 shadow-sm cardReveal">
-      <img src="./assets/autovision.png" class="card-img-top" alt="Auto Vision">
-      <div class="card-body text-center">
-        <h5 class="card-title">Auto-Vision</h5>
-        <a href="https://github.com/minhajahmdtk/Auto-vision" class="btn btn-outline-dark mt-2">Github</a>
+      <!-- Project 1 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
+          <img src="./assets/autovision.png" alt="Auto Vision">
+          <div class="project-content">
+            <h5>Auto-Vision</h5>
+            <a href="https://github.com/minhajahmdtk/Auto-vision" class="project-btn">GitHub</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
+          <img src="./assets/hms.png" alt="PulseTrack">
+          <div class="project-content">
+            <h5>PulseTrack</h5>
+            <a href="https://github.com/minhajahmdtk/PulseTrack" class="project-btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
+          <img src="./assets/pt.png" alt="Filmspace">
+          <div class="project-content">
+            <h5>Filmspace</h5>
+            <a href="https://github.com/minhajahmdtk/Filmspace" class="project-btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
+          <img src="./assets/ft.jpg" alt="Fitness Tracker">
+          <div class="project-content">
+            <h5>Fitness Tracker</h5>
+            <a href="https://github.com/minhajahmdtk/Fitness-Tracker" class="project-btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <!-- Project 2 -->
-  <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card project-card h-100 shadow-sm cardReveal">
-      <img src="./assets/hms.png" class="card-img-top" alt="PulseTrack">
-      <div class="card-body text-center">
-        <h5 class="card-title">PulseTrack</h5>
-        <a href="https://github.com/minhajahmdtk/PulseTrack" class="btn btn-outline-dark mt-2">Github</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card project-card h-100 shadow-sm cardReveal">
-      <img src="./assets/pt.png" class="card-img-top" alt="Filmspace">
-      <div class="card-body text-center">
-        <h5 class="card-title">Filmspace</h5>
-        <a href="https://github.com/minhajahmdtk/Filmspace" class="btn btn-outline-dark mt-2">Github</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4 -->
-  <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card project-card h-100 shadow-sm cardReveal">
-      <img src="./assets/ft.jpg" class="card-img-top" alt="Fitness Tracker">
-      <div class="card-body text-center">
-        <h5 class="card-title">Fitness Tracker</h5>
-        <a href="https://github.com/minhajahmdtk/Fitness-Tracker" class="btn btn-outline-dark mt-2">Github</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card project-card h-100 shadow-sm cardReveal">
-      <img src="./assets/ft.jpg" class="card-img-top" alt="Fitness Tracker">
-      <div class="card-body text-center">
-        <h5 class="card-title">Fitness Tracker</h5>
-        <a href="https://github.com/minhajahmdtk/Fitness-Tracker" class="btn btn-outline-dark mt-2">Github</a>
-      </div>
-    </div>
-  </div>
-
-  
-
-</div>
-
 </section>
+
 
 <!-- contact section -->
 
 <section id="contact" class="py-5" style="margin-top:50px; margin-bottom:90px;">
   <div class="container text-center">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title mb-4">Contact Me</h1>
+    <p class="section__text__p1 contact-left">Get in Touch</p>
+    <h1 class="title mb-4 contact-right">Contact Me</h1>
 
     <div class="row justify-content-center g-4">
       
       <!-- Email -->
 <div class="col-md-5 col-12 contact-left">
-  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3 border rounded">
+  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">
     
     <i class="bi bi-envelope-fill fs-4"></i>
 
@@ -302,7 +277,7 @@
 
       <!-- Phone -->
   <div class="col-md-5 col-12 contact-right">
-  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3 border rounded">
+  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">
     
     <i class="bi bi-telephone-fill fs-4"></i>
 
@@ -322,7 +297,7 @@
 
 
 <!-- FOOTER -->
-<footer class="bg-light py-4">
+<footer class="py-4 " id="footer">
   <div class="container text-center">
 
     <ul class="nav justify-content-center flex-column flex-md-row gap-2 mb-3">

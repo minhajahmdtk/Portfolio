@@ -1,8 +1,71 @@
-/* GENERAL */
+/* Default font (fallback) */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Profile / Hero section */
+#profile {
+  font-family: 'Playfair Display', serif;
+}
+
+/* About section */
+#about {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Experience section (tech-focused look) */
+#experience {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Projects section */
+#projects {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Contact section */
+#contact {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer */
+footer {
+  font-family: 'Montserrat', sans-serif;
+}
 
 
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+#profile h1 {
+  font-weight: 700;
+}
+
+#experience h1 {
+  letter-spacing: 1px;
+}
+
+
+#profile {
+  position: relative;
+  min-height: 100vh;
+}
+
+#profile .navbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+
 
 * {
   margin: 0;
@@ -18,15 +81,13 @@ p {
   color: rgb(85, 85, 85);
 }
 
+/* Nav-bar */
 
 
 
-/* Transparent base navbar */
 .custom-nav {
   background: transparent !important;
 }
-
-/* 🔑 CRITICAL: stop Bootstrap container width */
 .custom-nav .container {
   max-width: 700px;
   width: 100%;
@@ -34,16 +95,12 @@ p {
   padding-right: 0;
   justify-content: center !important;
 }
-
-/* Rounded pill container */
 .nav-pill {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 40px;
   padding: 10px 20px;
-
-  /* layout control */
   width: fit-content;
   max-width: 100%;
   margin: 0 auto;
@@ -52,32 +109,22 @@ p {
   gap: 1.5rem;
 }
 
-/* Center the navbar pill itself */
 .custom-nav .container {
   justify-content: center !important;
 }
 
-/* Prevent menu from stretching */
 .navbar-collapse {
   flex-grow: 0 !important;
 }
 
-/* Ensure links stay inline on large screens */
 .navbar-nav {
   flex-direction: row;
 }
-
-
-
-/* Navbar links */
-
 .nav-link {
   position: relative;
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
-/* Create hidden underline */
 .nav-link::after {
   content: "";
   position: absolute;
@@ -85,13 +132,13 @@ p {
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background-color: #000;   /* underline color */
+  background-color: #e1dede; 
   transition: width 0.3s ease;
 }
 
-/* On hover */
+
 .nav-link:hover {
-  color: #000;
+  color: #e1dede;
 }
 
 .nav-link:hover::after {
@@ -99,7 +146,7 @@ p {
 }
 
 .navbar-brand {
-  margin-right: 0.8rem;   /* ⬅ reduce gap to menu */
+  margin-right: 0.8rem;
   padding-right: 0;
   padding-left: 0;
 }
@@ -111,18 +158,20 @@ p {
 
 
 
+
 /* profile */
 
 .autoShow {
   opacity: 0;
   transform: translateY(60px);
-  animation: autoShow 1s ease forwards;
+  animation: autoShow 2s both;
 }
 
 /* delay second element */
 .autoShow:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
+
 
 @keyframes autoShow {
   from {
@@ -144,6 +193,16 @@ p {
   filter: brightness(1.1);
 }
 
+#btn{
+   background: rgba(255, 255, 255, 0.12);
+   border-radius: 15px;
+}
+
+#btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #e1dede;
+  
+}
 
 
 /* about section */
@@ -154,20 +213,27 @@ p {
 }
 
 #about img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 #about .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
 }
 
 #about .card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  background-color:black;
+  color: #e1dede;
 }
 
+
+
 .imageReveal {
-  animation: imageReveal both;
+  animation: imageReveal 1s both;
   animation-timeline: view(80% 10%);
   
   
@@ -189,7 +255,7 @@ p {
 }
 }
 
-/* experience section */
+/* Skill section */
 
 .tech-cloud {
   height: 500px;
@@ -222,10 +288,6 @@ p {
   transform: scale(1.25);
 }
 
-/* Scattered positions (Desktop) */
-
-/* ---------------- FRONTEND (LEFT) ---------------- */
-/* ---------------- FRONTEND (LEFT ZONE) ---------------- */
 .t1  { top: 8%;  left: 6%; }    /* HTML */
 .t2  { top: 28%; left: 19%; }   /* CSS */
 .t3  { top: 45%; left: 4%; }    /* JavaScript */
@@ -249,7 +311,6 @@ p {
 .t12 { top: 85%; right: 15%; }  /* Git */
 
 
-/* Smooth hover on inner content */
 .tech i,
 .tech span {
   transition: transform 0.3s ease;
@@ -268,12 +329,11 @@ p {
   animation-range: entry 85% cover 20%;
 }
 
-/* random angles for variation */
 .tech:nth-child(odd) {
   transform: translateY(-150px) rotate(15deg);
 }
 
-/* stagger */
+
 .tech:nth-child(1)  { animation-delay: 0.05s; }
  .tech:nth-child(2)  { animation-delay: 0.10s; }
 .tech:nth-child(3)  { animation-delay: 0.15s; }
@@ -305,65 +365,119 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* project Section */
 
+*/
 
-/* project card */
+/* =========================
+   PROJECT BOX STYLE
+========================= */
 
-.project-card {
-  width: 100%;
-  max-width: 420px;   /* controls card width */
-  transition: all 0.4s ease;
+/* =========================
+   PROJECT BOX STYLE
+========================= */
+
+#project .project-box {
+border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
-  border: none;
+}
+
+/* Hover effect */
+#project .project-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  cursor: pointer;
+  color: white;
 }
 
 
-.project-card img {
-  height: 220px;
+/* =========================
+   IMAGE
+========================= */
+
+.project-box img {
+  width: 100%;
+  height: 200px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.project-card:hover {
-  background-color: #000;
+.project-box:hover img {
+  transform: scale(1.1);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-content h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.project-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #6e6868;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #000;
   color: #fff;
-  transform: translateY(-8px);
 }
 
-.project-card:hover .card-title {
-  color: #fff;
+/* =========================
+   SCROLL REVEAL ANIMATION
+========================= */
+
+.cardReveal {
+  animation: orbitReveal 0.6s cubic-bezier(.16, 1, .3, 1) both;
+  animation-timeline: view(30% 20%);
 }
 
-.project-card:hover .btn {
-  border-color: #fff;
-  color: #fff;
+@keyframes orbitReveal {
+  from {
+    opacity: 0;
+    transform:
+      perspective(800px)
+      rotateY(40deg)
+      translateX(-60px)
+      scale(.9);
+  }
+  to {
+    opacity: 1;
+    transform:
+      perspective(800px)
+      rotateY(0)
+      translateX(0)
+      scale(1);
+  }
 }
 
-.project-card:hover .btn:hover {
-  background-color: #fff;
-  color: #000;
-}
 
-.project-card:hover img {
-  transform: scale(1.05);
-}
+
 
 
 .cardReveal {
-  animation: orbitReveal 1.2s cubic-bezier(.16, 1, .3, 1) both;
-  animation-timeline: view(90% 10%);
+  animation: orbitReveal 0.1s cubic-bezier(.16, 1, .3, 1) both;
+  animation-timeline: view(30% 20%);
 }
 
 @keyframes orbitReveal {
@@ -393,11 +507,13 @@ p {
 .contact-box {
   transition: all 0.35s ease;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
 }
 
 .contact-box i,
 .contact-box img {
-  transition: all 0.35s ease;
+  transition: all 0.6s ease;
 }
 
 .contact-box:hover {
@@ -426,8 +542,8 @@ p {
   opacity: 0;
   transform: translateX(-80px);
   animation: slideLeft both;
-  animation-timeline: view(80% 10%);
-  animation-duration: 1.1s;
+  animation-timeline: view(5% 10%);
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(.22,1,.36,1);
 }
 
@@ -436,7 +552,7 @@ p {
   opacity: 0;
   transform: translateX(80px);
   animation: slideRight both;
-  animation-timeline: view(80% 10%);
+  animation-timeline: view(5% 10%);
   animation-duration: 1.8s;
   animation-timing-function: cubic-bezier(.22,1,.36,1);
 }
@@ -456,3 +572,7 @@ p {
   }
 }
 
+/* footer */
+#footer{
+  background: rgba(255, 255, 255, 0.12)
+}
