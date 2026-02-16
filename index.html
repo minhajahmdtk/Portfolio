@@ -15,17 +15,16 @@
 
 
   </head>
-  <body>
-<section id="profile" class="vh-100 d-flex align-items-center">
-  <nav class="navbar navbar-expand-lg fixed-top custom-nav " id="heroNav">
-  <div class="container nav-pill flex-lg-row flex-column text-center text-lg-start">
+ <body>
 
-    <!-- Brand -->
-    <a class="navbar-brand fw-bold fs-5  mb-2 mb-lg-0" href="#">
-      Minhaj Ahammed T K
-    </a>
+<!-- Nav and Profile section -->
 
-    <!-- Toggle -->
+    <section id="profile" class="vh-100 d-flex align-items-center">
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav " id="heroNav">
+    <div class="container nav-pill flex-lg-row flex-column text-center text-lg-start">
+      <a class="navbar-brand fw-bold fs-5  mb-2 mb-lg-0" href="#">
+        Minhaj Ahammed T K
+      </a>
     <button 
       class="navbar-toggler mx-auto mx-lg-0 ms-lg-auto"
       type="button"
@@ -34,118 +33,86 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="navbarNav">
       <ul class="navbar-nav align-items-center gap-4">
-
         <li class="nav-item">
           <a class="nav-link text-dark" href="#about">About</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#experience">Experience</a>
+          <a class="nav-link text-dark" href="#experience">Skills</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-dark" href="#projects">Projects</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-dark" href="#contact">Contact</a>
         </li>
-
       </ul>
     </div>
-
   </div>
 </nav>
   <div class="container" >
     <div class="row justify-content-center text-center">
-      
       <div class="col-lg-5 text-center mb-4 mb-lg-0 autoShow" id="image">
         <img src="./assets/Photo.JPG"
              alt="Minhaj Ahammed Profile Picture"
              class="img-fluid rounded-circle shadow " style="width: 220px;">
       </div>
-
-      <!-- Profile Text BELOW -->
       <div class="col-lg-8 autoShow" style="margin: 20px;" >
         <h1 class="fw-bold">Minhaj Ahammed T K</h1>
-
-        <!-- Buttons -->
         <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 my-3">
           <button class="btn "
             onclick="window.open('./assets/Minhaj_AhammedTK_resume.pdf')" id="btn">
             Download CV
           </button>
-
         </div>
-
-        <!-- Social Icons -->
-        <div class="d-flex justify-content-center gap-3">
+        <div class="d-flex justify-content-center gap-3" style="margin-top: 30px;">
           <img src="./assets/linkedin.png" width="35" style="cursor:pointer" onclick="window.open('https://linkedin.com/in/minhajahd')">
           <img src="./assets/github.png" width="35" style="cursor:pointer" onclick="window.open('https://github.com/minhajahmdtk')">
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
 
-<section id="about" class="py-5 " style="margin:0px 0px 8px 0px;">
-  
-    <div class="container ">
+<!-- About Section -->
 
-    <!-- Title -->
-    <div class="text-center " style="margin-bottom: 50px;margin-top: 20px;">
+<section id="about" class="py-5">
+  <div class="container ">
+    <div class="text-center " style="margin-bottom:50px;">
       <h1 class="fw-bold imageReveal">About Me</h1>
     </div>
-
     <div class="row align-items-center">
-
-      <!-- Image -->
       <div class="col-lg-5 text-center mb-4 mb-lg-0 imageReveal">
         <img src="./assets/Minhaj_AhammedTk.jpg"
              alt="Profile picture"
              class="img-fluid rounded-4 shadow "style="width: 300px;">
       </div>
-
-      <!-- Details -->
       <div class="col-lg-7">
-
-        <!-- Cards -->
         <div class="row text-center mb-4 imageReveal " >
           <div class="col-md-6 mb-3 ">
-    <a href="https://www.inetinfotech.in/" 
-     target="_blank" 
-     class="text-decoration-none d-block">
-     
-    <div class="card h-100 shadow-sm p-3 text-center">
-  <i class="bi bi-person-workspace fs-2 mb-2 cardicon"></i>
+            <a href="https://www.inetinfotech.in/" 
+              target="_blank" 
+              class="text-decoration-none d-block">
+     <div class="card h-100 shadow-sm p-3 text-center">
+    <i class="bi bi-person-workspace fs-2 mb-2 cardicon"></i>
   <h5 class="fw-bold">Internship</h5>
   <p class="mb-0">Python Django</p>
 </div>
-
   </a>
 </div>
 
-          <div class="col-md-6 mb-3">
+  <div class="col-md-6 mb-3">
   <a href="https://vjec.ac.in/"
      target="_blank"
      class="text-decoration-none text-dark d-block">
-
     <div class="card h-100 shadow-sm p-3 text-center">
       <i class="bi bi-mortarboard-fill fs-2 mb-2 cardicon"></i>
       <h5 class="fw-bold">Education</h5>
       <p class="mb-0">BTech Computer Science</p>
     </div>
-
   </a>
 </div>
-
-
-        <!-- Text -->
         <p class="text-muted imageReveal">
           Computer Science Engineering graduate from APJ Abdul Kalam Technological University.
           I am a Python and Django developer with hands-on experience building web applications,
@@ -154,9 +121,7 @@
           I am now seeking entry-level opportunities in Software Development, Python Development,
           or Web Development where I can grow professionally and contribute to meaningful projects.
         </p>
-
       </div>
-
     </div>
   </div>
 </section>
@@ -165,13 +130,9 @@
 
 <section id="experience" style="margin:50px 0px 0px 0px;">
   <div class="container text-center">
-
-    <p class="text-muted" style="margin-top: 100px;">Explore My</p>
-    <h1 class="fw-bold" style="margin-bottom: 30px; ">Skills</h1>
-
+    <p class="text-muted dropHeading" style="margin-top: 100px;">Explore My</p>
+    <h1 class="fw-bold dropHeading" style="margin-bottom: 30px; ">Skills</h1>
   <div class="tech-cloud position-relative" style="margin-bottom: 50px;">
-
-      <!-- Each tech item -->
 <div class="tech t1 "><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
 <div class="tech t2 "><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
 <div class="tech t3 "><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
@@ -187,67 +148,79 @@
 <div class="tech t13 "><i class="devicon-github-original colored"></i><span>GitHub</span></div>
 <div class="tech t14 "><i class="devicon-php-plain colored"></i><span>PHP</span></div>
 <div class="tech t15 "><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
-
-
     </div>
   </div>
 </section>
 
 <!-- projects section -->
 
-<section id="projects" class="py-5" style="margin-top:90px;">
+<section id="projects" class="py-5" >
   <div class="container text-center">
-    <h1 class="title mb-5 cardReveal">Projects</h1>
-
-    <div class="row g-4 justify-content-center">
-
+    <h1 class="title cardReveal" style="margin-bottom: 80px;">Projects</h1>
+    <div class="row g-4 justify-content-center ">
       <!-- Project 1 -->
       <div class="col-lg-3 col-md-6 col-12">
-        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
-          <img src="./assets/autovision.png" alt="Auto Vision">
+        <div class="project-box cardReveal">
+          <img src="./assets/autovision.png" alt="Auto Vision Project">
           <div class="project-content">
             <h5>Auto-Vision</h5>
-            <a href="https://github.com/minhajahmdtk/Auto-vision" class="project-btn">GitHub</a>
+            <a href="https://github.com/minhajahmdtk/Auto-vision"
+               target="_blank"
+               class="project-btn">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Project 2 -->
       <div class="col-lg-3 col-md-6 col-12">
-        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
-          <img src="./assets/hms.png" alt="PulseTrack">
+        <div class="project-box cardReveal">
+          <img src="./assets/hms.png" alt="PulseTrack Project">
           <div class="project-content">
             <h5>PulseTrack</h5>
-            <a href="https://github.com/minhajahmdtk/PulseTrack" class="project-btn">GitHub</a>
+            <a href="https://github.com/minhajahmdtk/PulseTrack"
+               target="_blank"
+               class="project-btn">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Project 3 -->
       <div class="col-lg-3 col-md-6 col-12">
-        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
-          <img src="./assets/pt.png" alt="Filmspace">
+        <div class="project-box cardReveal">
+          <img src="./assets/pt.png" alt="Filmspace Project">
           <div class="project-content">
             <h5>Filmspace</h5>
-            <a href="https://github.com/minhajahmdtk/Filmspace" class="project-btn">GitHub</a>
+            <a href="https://github.com/minhajahmdtk/Filmspace"
+               target="_blank"
+               class="project-btn">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Project 4 -->
       <div class="col-lg-3 col-md-6 col-12">
-        <div class="project-box cardReveal" style="background-color: rgba(255, 255, 255, 0.12);">
-          <img src="./assets/ft.jpg" alt="Fitness Tracker">
+        <div class="project-box cardReveal">
+          <img src="./assets/ft.jpg" alt="Fitness Tracker Project">
           <div class="project-content">
             <h5>Fitness Tracker</h5>
-            <a href="https://github.com/minhajahmdtk/Fitness-Tracker" class="project-btn">GitHub</a>
+            <a href="https://github.com/minhajahmdtk/Fitness-Tracker"
+               target="_blank"
+               class="project-btn">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+
 
 
 <!-- contact section -->
@@ -256,41 +229,27 @@
   <div class="container text-center">
     <p class="section__text__p1 contact-left">Get in Touch</p>
     <h1 class="title mb-4 contact-right">Contact Me</h1>
-
     <div class="row justify-content-center g-4">
-      
-      <!-- Email -->
 <div class="col-md-5 col-12 contact-left">
-  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">
-    
+  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">   
     <i class="bi bi-envelope-fill fs-4"></i>
-
     <p class="mb-0">
       <a href="mailto:mnhjahammed@gmail.com" class="text-decoration-none text-dark">
         mnhjahammed@gmail.com
       </a>
     </p>
-
   </div>
 </div>
-
-
-      <!-- Phone -->
   <div class="col-md-5 col-12 contact-right">
-  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">
-    
+  <div class="contact-box d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 p-3">   
     <i class="bi bi-telephone-fill fs-4"></i>
-
     <p class="mb-0">
       <a href="tel:+919876543210" class="text-decoration-none text-dark">
         +91 9645492417
       </a>
     </p>
-
   </div>
 </div>
-
-
     </div>
   </div>
 </section>
@@ -299,16 +258,13 @@
 <!-- FOOTER -->
 <footer class="py-4 " id="footer">
   <div class="container text-center">
-
     <ul class="nav justify-content-center flex-column flex-md-row gap-2 mb-3">
       <li class="nav-item "><a class="nav-link text-dark" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#experience">Experience</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#experience">Skills</a></li>
       <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
       <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
     </ul>
-
     <p class="mb-0">Copyright &#169; 2026 Minhaj Ahammed. All Rights Reserved.</p>
-
   </div>
 </footer>
     <script src="script.js"></script>
