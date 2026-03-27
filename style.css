@@ -281,12 +281,18 @@ p {
 .t14 { top: 85%; left: 52%; }   /* PHP */
 
 
-.t7  { top: 10%; right: 9%; }    /* REST API */
-.t8  { top: 10%; right: 30%; }    /* Django */
-.t13 { top: 42%; right: 14%; }   /* GitHub */
+.t7  { top: 10%; right: 9%; }   /* REST API */
+.t8  { top: 10%; right: 30%; }  /* Django */
+.t13 { top: 42%; right: 14%; }  /* GitHub */
 .t10 { top: 60%; right: 30%; }  /* MySQL */
 .t11 { top: 72%; right: 7%; }   /* SQLite */
 .t12 { top: 85%; right: 15%; }  /* Git */
+
+
+.t16 { top: 57%; left: 16%; }   /* Node.js */
+.t17 { top: 45%; left: 42%; }   /* MongoDB */
+.t18 { top: 74%; left: 60%; }   /* React */
+.t19 { top: 27%; right: 19%; }  /* Express */
 
 
 .tech i,
@@ -311,7 +317,6 @@ p {
   transform: translateY(-150px) rotate(15deg);
 }
 
-
 .tech:nth-child(1)  { animation-delay: 0.05s; }
 .tech:nth-child(2)  { animation-delay: 0.10s; }
 .tech:nth-child(3)  { animation-delay: 0.15s; }
@@ -327,6 +332,10 @@ p {
 .tech:nth-child(13) { animation-delay: 0.65s; }
 .tech:nth-child(14) { animation-delay: 0.70s; }
 .tech:nth-child(15) { animation-delay: 0.75s; }
+.tech:nth-child(16) { animation-delay: 0.80s; }
+.tech:nth-child(17) { animation-delay: 0.85s; }
+.tech:nth-child(18) { animation-delay: 0.90s; }
+.tech:nth-child(19) { animation-delay: 0.95s; }
 
 
 @keyframes dropIn {
