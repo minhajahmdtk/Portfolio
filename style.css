@@ -277,7 +277,7 @@ p {
 
 .t4  { top: 12%; left: 38%; }   /* Python */
 .t5  { top: 32%; left: 54%; }   /* C */
-.t6  { top: 58%; left: 41%; }   /* Java */
+.t6  { top: 60%; left: 41%; }   /* Java */
 .t14 { top: 85%; left: 52%; }   /* PHP */
 
 
@@ -293,7 +293,7 @@ p {
 .t17 { top: 45%; left: 42%; }   /* MongoDB */
 .t18 { top: 74%; left: 60%; }   /* React */
 .t19 { top: 27%; right: 20%; }  /* Express */
-
+.t20 { top: 10%; right: 10%; }  /* Express */
 
 .tech i,
 .tech span {
